@@ -6,11 +6,14 @@
 
 Collection of Dockerfiles to build Container Images that include necessary packages to test Ansible Roles with Molecule.
 
+[![REUSE status](https://api.reuse.software/badge/dominik.wombacher.cc/~git/ansible-molecule-container)](https://api.reuse.software/info/dominik.wombacher.cc/~git/ansible-molecule-container)
+
 # Table of Content
 
 * [Container](#container)
     * [SLES 12 SP5 - Python](#sles-12-sp5-python2)
     * [SLES 12 SP5 - Python, systemd](#sles-12-sp5-python2-systemd)
+* [License](#license)
 
 # Container
 
@@ -57,3 +60,11 @@ platforms:
       - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
       - "/dev/shm"
 ```
+
+# License
+
+Unless otherwise stated: `GNU General Public License v3.0 or later`
+
+All files contain license information either as `header comment` or `corresponding .license` file.
+
+[REUSE](https://reuse.software) from the [FSFE](https://fsfe.org/) implemented to verify license and copyright compliance.
