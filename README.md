@@ -9,8 +9,8 @@ Collection of Dockerfiles to build Container Images that include necessary packa
 # Table of Content
 
 * [Container](#container)
-    * [SLES 12 SP5 - Python](#sles12sp5-python2)
-    * [SLES 12 SP5 - Python, systemd](#sles12sp5-python2-systemd)
+    * [SLES 12 SP5 - Python](#sles-12-sp5-python2)
+    * [SLES 12 SP5 - Python, systemd](#sles-12-sp5-python2-systemd)
 
 # Container
 
