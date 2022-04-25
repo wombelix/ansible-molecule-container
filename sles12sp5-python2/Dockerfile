@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2022 Dominik Wombacher <dominik@wombacher.cc>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
 FROM registry.suse.com/suse/sles12sp5:latest
 
 LABEL org.opencontainers.image.title="SLES 12 SP5 - Python2"
