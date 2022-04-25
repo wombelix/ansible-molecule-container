@@ -38,9 +38,9 @@ The `/dev/shm` line is nececessary to meet requirements of the included `sapconf
 
 Further details why the other tmpfs and volume statements are necessary:
 
-- https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container#the_quest
-- https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html
-- https://github.com/moby/moby/issues/6758#issuecomment-284923933
+- <https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container#the_quest>
+- <https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html>
+- <https://github.com/moby/moby/issues/6758#issuecomment-284923933>
 
 ### How to use with Molecule
 
