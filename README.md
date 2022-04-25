@@ -14,11 +14,11 @@ Collection of Dockerfiles to build Container Images that include necessary packa
 
 # Container
 
-## SLES 12 SP5 - Python
+## SLES 12 SP5 - Python2
 
 Derived Container based on sles12sp5:latest that includes Python2 to allow testing Ansible Roles with Molecule.
 
-## SLES 12 SP5 - Python, systemd
+## SLES 12 SP5 - Python2, systemd
 
 Derived Container based on sles12sp5:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
 
