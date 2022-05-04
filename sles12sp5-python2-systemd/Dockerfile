@@ -16,7 +16,6 @@ RUN zypper -n in systemd systemd-sysvinit \
     python python-certifi python-zypp rpm-python python-xml python-devel \
     gawk sudo bash ca-certificates which bind-utils curl sapconf psmisc \
     openssh rsyslog libaudit1 audit; \
-    (cd /usr/lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
     rm -f /usr/lib/systemd/system/multi-user.target.wants/*; \
     rm -f /etc/systemd/system/*.wants/*; \
     rm -f /usr/lib/systemd/system/local-fs.target.wants/*; \
