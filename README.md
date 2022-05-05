@@ -13,6 +13,7 @@ Collection of Dockerfiles to build Container Images that include necessary packa
 * [Container](#container)
     * [SLES 12 SP5 - Python](#sles-12-sp5-python2)
     * [SLES 12 SP5 - Python, systemd](#sles-12-sp5-python2-systemd)
+    * [RHEL7 (UBI) - Python, systemd](#rhel-7-ubi-python2-systemd)
 * [License](#license)
 
 # Container
@@ -25,7 +26,7 @@ Derived Container based on sles12sp5:latest that includes Python2 to allow testi
 
 Derived Container based on sles12sp5:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
 
-## RHEL 7 (UBI) - Python, systemd
+## RHEL 7 (UBI) - Python2, systemd
 
 Derived Container based on ubi7/ubi-init:latest:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
 
