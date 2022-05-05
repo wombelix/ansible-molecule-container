@@ -26,7 +26,7 @@ Further details why the other tmpfs and volume statements are necessary:
 - https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html
 - https://github.com/moby/moby/issues/6758#issuecomment-284923933
 
-# How ti use with Molecule
+# How to use with Molecule
 
 ```
 platforms:
@@ -41,3 +41,7 @@ platforms:
       - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
       - "/dev/shm"
 ```
+
+# Important
+
+You need a SUSE Linux Enterprise Server 12 SP5 System with active subscription to build this container image.
