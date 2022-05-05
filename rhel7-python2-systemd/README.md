@@ -23,7 +23,7 @@ Further details why the other tmpfs and volume statements are necessary:
 - https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html
 - https://github.com/moby/moby/issues/6758#issuecomment-284923933
 
-# How ti use with Molecule
+# How to use with Molecule
 
 ```
 platforms:
