@@ -12,4 +12,4 @@ LABEL org.opencontainers.image.source="https://dominik.wombacher.cc/~git/ansible
 
 RUN yum install -y python rpm-python python-lxml python-devel \
     gawk sudo bash ca-certificates which bind-utils curl \
-    openssh rsyslog audit audit-libs;
+    openssh openssh-server rsyslog audit audit-libs;
