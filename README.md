@@ -14,6 +14,8 @@ Collection of Dockerfiles to build Container Images that include necessary packa
     * [SLES 12 SP5 - Python](#sles-12-sp5-python2)
     * [SLES 12 SP5 - Python, systemd](#sles-12-sp5-python2-systemd)
     * [RHEL7 (UBI) - Python, systemd](#rhel-7-ubi-python2-systemd)
+* [How to run systemd Container with Docker](#how-to-run-systemd-container-with-docker)
+* [How to use systemd Container with Molecule](#how-to-use-systemd-container-with-molecule)
 * [License](#license)
 
 # Container
@@ -30,6 +32,8 @@ Derived Container based on sles12sp5:latest that includes Python2 and systemd to
 
 Derived Container based on ubi7/ubi-init:latest:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
 
+# How to run systemd Container with Docker
+
 ```
 docker run \
 --tmpfs /run --tmpfs /tmp \
@@ -40,7 +44,8 @@ docker run \
 <image>
 ```
 
-The `/dev/shm` line is nececessary to meet requirements of the included `sapconf` package.
+The `/dev/shm` line is nececessary to meet requirements of the included `sapconf` package in the `sles12sp5-python2-systemd` container.
+Can be omitted when using other container or if `sapconf` isn't required / can be ignored.
 
 Further details why the other tmpfs and volume statements are necessary:
 
@@ -63,6 +68,8 @@ platforms:
       - "/sys/fs/cgroup:/sys/fs/cgroup:ro"
       - "/dev/shm"
 ```
+
+See `How to run systemd Container on Docker` section above for information about `/dev/shm`.
 
 # License
 
