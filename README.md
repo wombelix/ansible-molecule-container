@@ -6,7 +6,7 @@
 
 Collection of Dockerfiles to build Container Images that include necessary packages to test Ansible Roles with Molecule.
 
-[![REUSE status](https://api.reuse.software/badge/dominik.wombacher.cc/~git/ansible-molecule-container)](https://api.reuse.software/info/dominik.wombacher.cc/~git/ansible-molecule-container)
+[![REUSE status](https://api.reuse.software/badge/git.sr.ht/~wombelix/ansible-molecule-container)](https://api.reuse.software/info/git.sr.ht/~wombelix/ansible-molecule-container)
 
 # Table of Content
 
@@ -16,21 +16,23 @@ Collection of Dockerfiles to build Container Images that include necessary packa
     * [RHEL7 (UBI) - Python, systemd](#rhel-7-ubi-python2-systemd)
 * [How to run systemd Container with Docker](#how-to-run-systemd-container-with-docker)
 * [How to use systemd Container with Molecule](#how-to-use-systemd-container-with-molecule)
+* [Source](#source)
+* [Contribute](#contribute)
 * [License](#license)
 
 # Container
 
 ## SLES 12 SP5 - Python2
 
-Derived Container based on sles12sp5:latest that includes Python2 to allow testing Ansible Roles with Molecule.
+Container based on sles12sp5:latest that includes Python2 to allow testing Ansible Roles with Molecule.
 
 ## SLES 12 SP5 - Python2, systemd
 
-Derived Container based on sles12sp5:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
+Container based on sles12sp5:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
 
 ## RHEL 7 (UBI) - Python2, systemd
 
-Derived Container based on ubi7/ubi-init:latest:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
+Container based on ubi7/ubi-init:latest:latest that includes Python2 and systemd to allow testing Ansible Roles with Molecule.
 
 # How to run systemd Container with Docker
 
@@ -50,8 +52,14 @@ Can be omitted when using other container or if `sapconf` isn't required / can b
 Further details why the other tmpfs and volume statements are necessary:
 
 - <https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container#the_quest>
+  (Archive: [[1]](https://web.archive.org/web/20231009083718/https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container#the_quest), 
+  [[2]](https://archive.today/2023.10.09-083730/https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container%23the_quest))
 - <https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html>
+  (Archive: [[1]](https://web.archive.org/web/20230529154629/https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html), 
+  [[2]](https://archive.today/2023.10.09-083756/https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html))
 - <https://github.com/moby/moby/issues/6758#issuecomment-284923933>
+  (Archive: [[1]](https://web.archive.org/web/20231009083829/https://github.com/moby/moby/issues/6758#issuecomment-284923933), 
+  [[2]](https://archive.today/2023.10.09-083829/https://github.com/moby/moby/issues/6758%23issuecomment-284923933))
 
 ### How to use systemd Container with Molecule
 
@@ -69,7 +77,24 @@ platforms:
       - "/dev/shm"
 ```
 
-See `How to run systemd Container on Docker` section above for information about `/dev/shm`.
+See [How to run systemd Container with Docker](#how-to-run-systemd-container-with-docker) section above for information about `/dev/shm`.
+
+# Source
+
+The primary location is: https://git.sr.ht/~wombelix/ansible-molecule-container
+
+Mirrors of the repository are available on 
+[Codeberg](https://codeberg.org/wombelix/ansible-molecule-container), 
+[Gitlab](https://gitlab.com/wombelix/ansible-molecule-container) and 
+[Github](https://github.com/wombelix/ansible-molecule-container).
+
+# Contribute
+
+Don't hesitate to provide Feedback, open an Issue or create an Pull / Merge Request.
+
+Just pick the workflow or platform you prefer and are most comfortable with.
+
+Feedback, Bug Reports or Patches via [Email](https://dominik.wombacher.cc/pages/contact.html) are also always welcome.
 
 # License
 
