@@ -1,5 +1,5 @@
 <!--
- SPDX-FileCopyrightText: 2022 Dominik Wombacher <dominik@wombacher.cc>
+ SPDX-FileCopyrightText: 2023 Dominik Wombacher <dominik@wombacher.cc>
  SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 # SLES 12 SP5 - Python, systemd
@@ -22,9 +22,15 @@ The `/dev/shm` line is nececessary to meet requirements of the included `sapconf
 
 Further details why the other tmpfs and volume statements are necessary:
 
-- https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container#the_quest
-- https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html
-- https://github.com/moby/moby/issues/6758#issuecomment-284923933
+- <https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container#the_quest>
+  (Archive: [[1]](https://web.archive.org/web/20231009083718/https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container#the_quest), 
+  [[2]](https://archive.today/2023.10.09-083730/https://developers.redhat.com/blog/2016/09/13/running-systemd-in-a-non-privileged-container%23the_quest))
+- <https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html>
+  (Archive: [[1]](https://web.archive.org/web/20230529154629/https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html), 
+  [[2]](https://archive.today/2023.10.09-083756/https://blog.swwomm.com/2020/10/testing-systemd-services-on-arch-fedora.html))
+- <https://github.com/moby/moby/issues/6758#issuecomment-284923933>
+  (Archive: [[1]](https://web.archive.org/web/20231009083829/https://github.com/moby/moby/issues/6758#issuecomment-284923933), 
+  [[2]](https://archive.today/2023.10.09-083829/https://github.com/moby/moby/issues/6758%23issuecomment-284923933))
 
 # How to use with Molecule
 
